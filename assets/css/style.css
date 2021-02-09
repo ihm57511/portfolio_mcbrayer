@@ -9,20 +9,62 @@
     --accentbl: #B1BBC9;
 }
 
-
-header {
+body {
     margin: 0;
-    background-color: crimson;
+    padding: 0;
+    background-color: var(--light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+header {
+    margin: 0 ;
+    background-color: var(--dark);
+    display: flex;
+    
+}
 
 h1 {
-    background-color: blue;
+    color: var(--accentbl);
+    font-size: 54px;
     text-align: center;
     margin: 0;
-    padding: 2px;
+    padding: 4px 0 0 0;
+    width: 70%
 }
 
-hero {
-
+nav {
+    margin: 0;
+    padding: 12px 8px;
+    width: 30%;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    color: var(--accentbl);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+li {
+    font-size: 24px;
+    list-style-type: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin: 8px 8px 8px 8px;
+    padding: 0px 4px;
+}
+
+.hero { 
+    height: 250px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    background-image: url(../images/pexels-soulful-pizza-3715428.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+} 
