@@ -1,3 +1,28 @@
+
+:root {
+    --light: #D1CCD3;
+    --med: #5B6567;
+    --dark: #1C2F35;
+    --dark2: #2E4041;
+    --accentgrpi: #7D726E;
+    --accentgrpi2: #978078;
+    --accentbl: #B1BBC9;
+}
+
+
+header {
+    margin: 0;
+    background-color: crimson;
+}
+
+
 h1 {
+    background-color: blue;
     text-align: center;
+    margin: 0;
+    padding: 2px;
+}
+
+hero {
+
 }
