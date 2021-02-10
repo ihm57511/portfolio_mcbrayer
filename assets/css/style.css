@@ -1,4 +1,4 @@
-
+/* color pallette */
 :root {
     --light: #D1CCD3;
     --med: #5B6567;
@@ -9,6 +9,7 @@
     --accentbl: #B1BBC9;
 }
 
+/* sets baseline styles for content of body */
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +17,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+
+/* sets style and positioning of header and nav  */
 header {
     width: 100%;
     margin: 0 ;
@@ -61,6 +64,8 @@ a {
     color: var(--accentbl);
     text-decoration: none;
 }
+
+/* sets sizing and positioning of hero section */
 .hero { 
     height: 250px;
     width: 100%;
@@ -72,21 +77,18 @@ a {
     background-position: center;
 }
 
+/* sets style of main body section including "about" and "work" sections 
+also sets initial flex atributes for responsiveness */
 main {
-    margin: 0 0 120px 0;
+    margin-bottom: 36px;
     padding: 0;
     display: flex;
     flex-direction: row;
 
 }
 aside {
-    width: 30%;
+    width: 40%;
     border-right: var(--dark) solid 2px;
-    
-}
-
-article {
-    padding: 0 24px;
 }
 
 h2 {
@@ -98,10 +100,15 @@ h2 {
 #headshot {
     max-height: 500px;
     max-width: 260px;
-    padding-left: 24px;
+    padding-left: 88px;
 }
+
+article {
+    padding: 0 24px;
+}
+
 .highlight {
-    width: 69%;
+    width: 59%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -116,13 +123,11 @@ h3 {
 }
 
 .main-project-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position:relative;
 }
 
 .horiseon {
+    max-width: 270px;
     border-radius: 6px;
 }
 
@@ -134,7 +139,7 @@ h3 {
     background-color: var(--dark);
     color: var(--light);
     position:absolute;
-    top: 10px;
+    top: 0px;
     left: center;
 
 }
@@ -147,13 +152,14 @@ figcaption {
     padding: 12px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: top;
 }
 
 .project-card {
+    margin: 8px;
     color: var(--accentbl);
     font-size: 24px;
-    height: 80px;
+    height: 60px;
     width: 240px;
     border-radius: 4px;
     background-color: var(--dark);
@@ -163,6 +169,7 @@ figcaption {
     align-items: center;
 }
 
+/* sets styling of footer and included contact information content */
 footer {
     width: 100%;
     background-color: var(--dark);
@@ -195,7 +202,8 @@ footer {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 992px) {
+/* first media grab for responsiveness at lower screen sizes, i.e. tablets */
+@media screen and (max-width: 1075px) {
     body {
         width: 100%;
     }
@@ -216,14 +224,16 @@ footer {
     .nav-bar {
         justify-content: center;
     }
-
-}
-
-@media screen and (max-width: 950px) {
+    main {
+        margin-bottom: 24px;
+    }
     aside {
         width: 50%;
     }
 
+    h3 {
+        margin-bottom: 2px;
+    }
     .highlight {
         width: 50%;
         display: flex;
@@ -231,15 +241,13 @@ footer {
         justify-content: center;
     }
 
-    .projects {
-        padding: 12px;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .project-card {
+        margin: 2px;
     }
 
 }
 
+/* sets style for mobile aplications */
 @media screen and (max-width: 576px) {
     header {
         width: 100%;
@@ -266,6 +274,7 @@ footer {
 
     main {
         flex-direction: column;
+        margin-bottom: 64px;
     }
 
     aside {
