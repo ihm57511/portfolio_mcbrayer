@@ -78,7 +78,7 @@ main {
     flex-direction: row;
 }
 aside {
-    padding: 12px;
+    padding: 0px 24px;
     width: 33%;
 }
 
@@ -87,22 +87,78 @@ h2 {
     color: var(--dark);
 }
 
-.work {
+.highlight {
     width: 66%;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h3 {
+    margin: 28px 0 20px 0;
+    padding: 0;
     font-size: 38px;
     color: var(--dark);
+    width: 100%;
 }
 
-.main-project {
-    
+.main-project-card {
+    border-color: var(--dark2);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 6px;
+    ;
+
 }
 
-.project {
-
+.horiseon {
+    border-radius: 2px;
 }
+
+.projects {
+    padding: 12px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card {
+    height: 80px;
+    width: 300px;
+    border-color: var(--dark2);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 4px;
+    background-color: var(--med);
+}
+
+footer {
+    background-color: var(--dark);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-name {
+    font-size: 32px;
+    list-style-type: none;
+    border: none;
+}
+
+.info {
+    font-size: 18px;
+    list-style-type: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin: 8px 8px 8px 8px;
+    padding: 4px;
+}
+
+
+/* at first media grab, (width = 1120px) about me and work need to split 50/50
+and class.projects needs to drop and go row intead of column, and drop nav bar below header with wrap*/
