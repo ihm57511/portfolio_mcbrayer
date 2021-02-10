@@ -21,8 +21,6 @@ header {
     margin: 0 ;
     background-color: var(--dark);
     display: flex;
-    
-    
 }
 
 h1 {
@@ -91,19 +89,15 @@ article {
     padding: 0 24px;
 }
 
-.aside-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 h2 {
-    padding-left: 24px;
+    text-align: center;
     font-size: 38px;
     color: var(--dark);
 }
 
 #headshot {
+    max-height: 500px;
+    max-width: 260px;
     padding-left: 24px;
 }
 .highlight {
@@ -122,21 +116,33 @@ h3 {
 }
 
 .main-project-card {
-    max-height: 600px;
-    max-width: 280px;
-    border-color: var(--dark2);
-    border-width: 4px;
-    border-style: solid;
-    border-radius: 6px;
-    padding: 0px;
-    object-fit: cover;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
 }
 
 .horiseon {
-    border-radius: 2px;
+    border-radius: 6px;
 }
 
+.image-title {
+    padding: 2px 82px;
+    font-size: 24px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: var(--dark);
+    color: var(--light);
+    position:absolute;
+    top: 10px;
+    left: center;
+
+}
+
+figcaption {
+    height: 24px;
+    width: 50px;
+}
 .projects {
     padding: 12px;
     display:flex;
@@ -145,14 +151,16 @@ h3 {
 }
 
 .project-card {
+    color: var(--accentbl);
+    font-size: 24px;
     height: 80px;
     width: 240px;
-    border-color: var(--dark2);
-    border-width: 4px;
-    border-style: solid;
     border-radius: 4px;
-    background-color: var(--med);
+    background-color: var(--dark);
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -270,16 +278,23 @@ footer {
         margin-bottom: 50px;
     }
 
+    .main-project-card {
+        width: 100%;
+    }
+
+    .project-card {
+        margin: 2px 0;
+    }
     footer {
         width: 100%;
         
     }
 
-    .contact-info {
+    .contact {
         width: 100%;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
     }
 
 }
