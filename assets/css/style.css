@@ -79,7 +79,7 @@ main {
 }
 aside {
     padding: 0px 24px;
-    width: 33%;
+    width: 30%;
 }
 
 h2 {
@@ -88,7 +88,7 @@ h2 {
 }
 
 .highlight {
-    width: 66%;
+    width: 69%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -103,11 +103,14 @@ h3 {
 }
 
 .main-project-card {
+    max-height: 600px;
+    max-width: 280px;
     border-color: var(--dark2);
     border-width: 4px;
     border-style: solid;
     border-radius: 6px;
     padding: 0px;
+    object-fit: cover;
 
 }
 
@@ -124,7 +127,7 @@ h3 {
 
 .project-card {
     height: 80px;
-    width: 300px;
+    width: 240px;
     border-color: var(--dark2);
     border-width: 4px;
     border-style: solid;
@@ -159,6 +162,49 @@ footer {
     padding: 4px;
 }
 
+@media screen and (max-width: 992px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        padding: 0px 24px;
+        width: 50%;
+    }
+
+    .highlight {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects {
+        padding: 12px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        flex-direction: column;
+}
 
 /* at first media grab, (width = 1120px) about me and work need to split 50/50
 and class.projects needs to drop and go row intead of column, and drop nav bar below header with wrap*/
