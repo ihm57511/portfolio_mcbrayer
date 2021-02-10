@@ -56,6 +56,10 @@ li {
     padding: 0px 4px;
 }
 
+a {
+    color: var(--accentbl);
+    text-decoration: none;
+}
 .hero { 
     height: 250px;
     width: 100%;
@@ -65,6 +69,40 @@ li {
     background-image: url(../images/pexels-soulful-pizza-3715428.jpg);
     background-size: cover;
     background-position: center;
+}
 
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    padding: 12px;
+    width: 33%;
+}
 
-} 
+h2 {
+    font-size: 38px;
+    color: var(--dark);
+}
+
+.work {
+    width: 66%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 38px;
+    color: var(--dark);
+}
+
+.main-project {
+    
+}
+
+.project {
+
+}
