@@ -14,11 +14,11 @@
     <header>
         <h1>Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume">Resume</a></li>
+            <ul class=nav-bar>
+                <li class=nav-links><a href="#about">About</a></li>
+                <li class=nav-links><a href="#work">Work</a></li>
+                <li class=nav-links><a href="#contact">Contact</a></li>
+                <li class=nav-links><a href="#resume">Resume</a></li>
 
             </ul>
         </nav>
@@ -26,7 +26,10 @@
     <figure class="hero" alt="Maze of corridors."></figure>
     <main>
         <aside id=about>
-            <h2>about me</h2>
+            <section class=aside-tiitle></section>
+                <h2>about me</h2>
+                <img id=headshot src="#" alt="portrait of man">
+            </section>  
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam. Nostrum, blanditiis eos
                     obcaecati deleniti velit amet accusamus soluta ipsam repudiandae ad magnam quod. Commodi, amet ut?
@@ -41,7 +44,8 @@
         </aside>
         <section id=work class=highlight>
             <h3>work</h3>
-            <figure class="main-project-card"><img class=horiseon src="assets/images/01-html-css-git-homework-demo.png" alt="Screenshot of the homepage belonging to Horiseon Marketing."></figure>
+            <figure class="main-project-card"><img class=horiseon src="assets/images/01-html-css-git-homework-demo.png"
+                    alt="Screenshot of the homepage belonging to Horiseon Marketing."></figure>
             <ul class=projects>
                 <li class="project-card"></li>
                 <li class="project-card"></li>
@@ -51,17 +55,14 @@
         </section>
     </main>
     <footer id=contact>
-        <ul class=contact>
-            <li class=contact-name>Ian McBrayer</li>
-            <li class=info>###-###-####</li>
-            <li class=info><a href="asdf">email@email.com</a></li>
-            <li class=info><a href="asdf">GitHub</a></li>
-        </ul>
+        <section class=contact-info>
+            <section class=contact-name>Ian McBrayer</section>
+            <section class=info>704-941-8232</section>
+            <section class=info><a href="asdf">mcbrayer.ian@gmail.com</a></section>
+            <section class=info><a href="asdf">GitHub</a></section>
+        </section>
     </footer>
 
 </body>
 
 </html>
-
-
- 
