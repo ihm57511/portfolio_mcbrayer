@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -18,15 +18,15 @@
                 <li class=nav-links><a href="#about">About</a></li>
                 <li class=nav-links><a href="#work">Work</a></li>
                 <li class=nav-links><a href="#contact">Contact</a></li>
-                <li class=nav-links><a href="#resume">Resume</a></li>
+                <li class=nav-links><a href="assets/Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
     <figure class="hero" alt="Maze of corridors."></figure>
     <main>
-        <aside id=about>
+        <aside id="about">
             <h2>About</h2>
-            <img id=headshot src="assets/images/pexels-simon-migaj-747470.jpg" alt="portrait of man">
+            <img id="headshot" src="assets/images/pexels-simon-migaj-747470.jpg" alt="portrait of man">
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam. Nostrum, blanditiis eos
                     obcaecati deleniti velit amet accusamus soluta ipsam repudiandae ad magnam quod. Commodi, amet ut?
@@ -39,30 +39,34 @@
                     perspiciatis maxime eius sapiente?</p>
             </article>
         </aside>
-        <section id=work class=highlight>
+        <section id="work" class="highlight">
             <h3>Work</h3>
-            <figure class="main-project-card">
+            <figure id="main-project-card">
                 <div>
-                    <a href="https://ihm57511.github.io/refactor-horiseon-hw-1/" target="-blank">
-                        <img class=horiseon
-                            src="assets/images/01-HTML-Git-CSS_02-Homework_Assets_01-html-css-git-homework-demo.png"
-                            alt="Homepage of Horiseon Marketing."></a>
-                    <div class=image-title>Horiseon</div>
+                    <a href="https://ihm57511.github.io/fresh-air-finder/" target="-blank">
+                        <img id="main-project-image" src="assets/images/homepage-new.png"
+                            alt="Homepage of Fresh Air Finder."></a>
+                    <!-- <div class="image-title">Fresh Air Finder</div> -->
                 </div>
             </figure>
-            <ul class=projects>
-                <li class="project-card">Future Work</li>
-                <li class="project-card">Future Work</li>
-                <li class="project-card">Future Work</li>
-            </ul>
+            <div class="projects">
+                <div class="project-card" id="project1"><a href="https://ihm57511.github.io/dayPlanner/"
+                        target="_blank"></div>
+                <div class="project-card" id="project2"><a href="https://ihm57511.github.io/password-generator/"
+                        target="_blank"></a></div>
+                <div class="project-card" id="project3"><a href="https://ihm57511.github.io/refactor-horiseon-hw-1/"
+                        target="_blank"></a></div>
+            </div>
         </section>
     </main>
-    <footer id=contact>
-        <section class=contact-info>
-            <section class=contact-name>Ian McBrayer</section>
-            <section class=info>###-###-####</section>
-            <section class=info><a href="asdf">mcbrayer.ian@gmail.com</a></section>
-            <section class=info><a href="https://github.com/ihm57511" target="_blank">GitHub</a></section>
+    <footer id="contact">
+        <section class="contact-info">
+            <section class="contact-name">Ian McBrayer</section>
+            <section class="info">704-941-8232</section>
+            <section class="info">mcbrayer.ian@gmail.com</section>
+            <section class="info"><a href="https://github.com/ihm57511" target="_blank">GitHub</a></section>
+            <section class="info"><a href="https://www.linkedin.com/in/ian-mcbrayer-3559ab1a8/"
+                    target="_blank">LinkedIn</a></section>
         </section>
     </footer>
 
