@@ -1,0 +1,28 @@
+{
+  "name": "portfolio_mcbrayer",
+  "version": "1.0.0",
+  "description": "This project consisted of a ground up design, and build, using both html and css. After laying out a basic framework, time was spent utilizing various styling and layout tools to achieve the final product linked below. It is my intention to continue building out this portfolio as my skills evolve.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihm57511/portfolio_mcbrayer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihm57511/portfolio_mcbrayer/issues"
+  },
+  "homepage": "https://github.com/ihm57511/portfolio_mcbrayer#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7"
+  }
+}
